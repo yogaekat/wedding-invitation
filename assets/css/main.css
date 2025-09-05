@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hide-scrollbar{
+    scrollbar-width: none;
+}
+
+@font-face {
+    font-family: 'marcellus';
+    src: url('/fonts/marcellus-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'beausite';
+    src: url('/fonts/beausite-fit-regular.woff2') format('woff2');
+    font-weight: 400; /* Weight for regular */
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'beausite';
+    src: url('/fonts/beausite-fit-light.woff2') format('woff2');
+    font-weight: 300; /* Weight for regular */
+    font-style: normal;
+    font-display: swap;
+}
