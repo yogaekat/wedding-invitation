@@ -10,6 +10,9 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@fancyapps/ui": "^6.0.30",
+    "aos": "^2.3.4",
+    "axios": "^1.12.1",
     "gsap": "^3.13.0",
     "nuxt": "^4.0.3",
     "vue": "^3.5.20",

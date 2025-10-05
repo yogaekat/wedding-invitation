@@ -16,7 +16,7 @@
                     <img src="/public/images/logo.svg" alt="" class="h-[45vh]">
                     <div class="text-center text-[#FAEFD9]">
                         <p class="mb-3">Kepada Yth.<br>Bapak/Ibu/Saudara/I</p>
-                        <p class="uppercase border-b border-[#FAEFD9] py-3 px-5 mb-4">Yoga Ekatanaya</p>
+                        <p class="uppercase border-b border-[#FAEFD9] py-3 px-5 mb-4">{{ invited.name }}</p>
                     </div>
                     <transition
                       enter-active-class="transition-all duration-700 ease-in-out"
@@ -57,7 +57,7 @@
                     <img src="/public/images/logo.svg" alt="" class="h-[45vh]" data-aos="fade-up">
                     <div class="text-center text-[#FAEFD9]">
                         <p class="mb-3">Kepada Yth.<br>Bapak/Ibu/Saudara/I</p>
-                        <p class="uppercase border-b border-[#FAEFD9] py-3 px-5 mb-4 w-[17rem]">Yoga Ekatanaya</p>
+                        <p class="uppercase border-b border-[#FAEFD9] py-3 px-5 mb-4 w-[17rem]">{{ invited.name }}</p>
                     </div>
                     <transition
                       enter-active-class="transition-all duration-700 ease-in-out"
@@ -89,7 +89,7 @@
             <Mepandes />
             <event />
             <gallery />
-            <wish />
+            <wish :invited="invited" />
             <gift />
             <ending />
           </div>
@@ -140,22 +140,19 @@
     
 </template>
 
-
-
 <script setup>
-  import { ref, onMounted, onBeforeUnmount, nextTick } from 'vue';
+import { useRoute } from 'vue-router'
+import { getInvitedDetail } from '~/server/invited'
+import { ref, onMounted, onBeforeUnmount, nextTick } from 'vue';
   import introloading from '~/components/introloading.vue';
 
-  useSeoMeta({
-    title: 'Wedding of Oka & Mita',
-    ogTitle: 'Wedding of Oka & Mita',
-    description: '',
-    ogDescription: '',
-  });
+const route = useRoute()
+const slug = route.params.slug
 
-  
-
-
+const { data: invited, pending, error } = await useAsyncData(
+  `invited-${slug}`,
+  () => getInvitedDetail(slug)
+)
 
   const isOpen = ref(false)
   const isMusicPaused = ref(false)
