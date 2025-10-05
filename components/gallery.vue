@@ -19,7 +19,7 @@
                 :key="i"
                 class="mb-2 break-inside-avoid"
             >
-                <a :href="img" data-fancybox="gallery" data-aos="fade-up" data-aos-delay="300" >
+                <a :href="img" data-fancybox="gallery" data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-delay="300" >
                     <img :src="img" alt="gallery Wedding Oka & Mita" class="w-full h-full rounded-xl object-cover"/>
                 </a>
             </div>
@@ -29,12 +29,7 @@
 </template>
 
 <script setup>
-    import { Fancybox } from "@fancyapps/ui";
-    import "@fancyapps/ui/dist/fancybox/fancybox.css";
-
-    Fancybox.bind('[data-fancybox="gallery"]', {
-      // Your custom options for a specific gallery
-    });
+    import { onMounted } from 'vue'
 
     const images = [
       "https://images.unsplash.com/photo-1655736394091-b1c3efc76a08?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // portrait
@@ -51,4 +46,14 @@
       "https://images.unsplash.com/photo-1655736045872-d9ff640bceed?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTA5fHx8ZW58MHx8fHx8"
     
     ]
+
+    onMounted(async () => {
+      // Import hanya di client
+      const fancybox = await import('@fancyapps/ui')
+      await import('@fancyapps/ui/dist/fancybox/fancybox.css')
+
+      fancybox.Fancybox.bind('[data-fancybox="gallery"]', {
+        // Opsi custom Fancybox di sini
+      })
+    })
 </script>
