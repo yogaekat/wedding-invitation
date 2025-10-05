@@ -152,6 +152,13 @@ import { getInvitedDetail } from '~/server/invited'
 import { ref, onMounted, onBeforeUnmount, nextTick } from 'vue';
 import introloading from '~/components/introloading.vue';
 
+useSeoMeta({
+    title: 'Wedding of Oka & Mita',
+    ogTitle: 'Wedding of Oka & Mita',
+    description: 'Dengan penuh cinta, kami mengundang Anda untuk menjadi bagian dari hari bahagia Oka & Mita. Lihat detail acara dan kirimkan doa terbaik Anda.',
+    ogDescription: 'Dengan penuh cinta, kami mengundang Anda untuk menjadi bagian dari hari bahagia Oka & Mita. Lihat detail acara dan kirimkan doa terbaik Anda.',
+  });
+
   const showOverlay = ref(true)
   onMounted(() => {
     setTimeout(() => {
