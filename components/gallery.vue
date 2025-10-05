@@ -5,7 +5,13 @@
         </div>
         
         <div class="px-5 mb-4">
-            <video playsinline controls class="w-full aspect-video object-cover rounded-xl" data-aos="fade-up">
+            <video 
+                playsinline 
+                controls 
+                class="w-full aspect-video object-cover rounded-xl" 
+                data-aos="fade-up"
+                poster="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            >
                 <source src="/public/videos/semple2.mp4" type="video/mp4" />
                 Browser Anda tidak mendukung elemen video.
             </video>
@@ -19,8 +25,8 @@
                 :key="i"
                 class="mb-2 break-inside-avoid"
             >
-                <a :href="img" data-fancybox="gallery" data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-delay="300" >
-                    <img :src="img" alt="gallery Wedding Oka & Mita" class="w-full h-full rounded-xl object-cover"/>
+                <a :href="img" data-fancybox="gallery"  >
+                    <img :src="img" alt="gallery Wedding Oka & Mita" class="w-full h-full rounded-xl object-cover" data-aos="fade-in"/>
                 </a>
             </div>
             </div>

@@ -1,22 +1,21 @@
 <template>
-    <!-- <div id="loading" class="absolute top-0 left-0 bottom-0 right-0 bg-lightgold z-50"></div> -->
      <ClientOnly>
       <div>
         <introloading />
       </div>
     </ClientOnly>
     <!-- mobile -->
-    <div class="fixed left-0 w-full h-screen bg-pink-700 z-40 flex justify-center items-center xl:hidden transition-all duration-1000" :class="isOpen ? '-top-[100%]' : 'top-0'">
+    <div class="fixed left-0 w-full h-[100dvh] bg-pink-700 z-40 flex justify-center items-center xl:hidden transition-all duration-1000" :class="isOpen ? '-top-[100%]' : 'top-0'">
         <video autoplay muted loop playsinline class="h-full w-full object-cover absolute top-0 left-0 z-[1]">
                 <source src="/public/videos/semple1.mp4" type="video/mp4" />
                 Browser Anda tidak mendukung elemen video.
             </video>
-            <div class="absolute top-0 left-0 h-full w-full bg-[#252525]/80 flex justify-center items-end pb-[5rem] z-[2]">
+            <div class="absolute top-0 left-0 h-full w-full bg-[#252525]/80 flex justify-center items-end pb-[3rem] z-[2]">
                 <div class="flex flex-col items-center transition-all duration-700 font-primary">
-                    <img src="/public/images/logo.svg" alt="" class="h-[45vh]">
+                    <img src="/public/images/logo.svg" alt="" class="h-[30vh]">
                     <div class="text-center text-[#FAEFD9]">
                         <p class="mb-3">Kepada Yth.<br>Bapak/Ibu/Saudara/I</p>
-                        <p class="uppercase border-b border-[#FAEFD9] py-3 px-5 mb-4">{{ invited.name }}</p>
+                        <p class="uppercase border-b border-[#FAEFD9] py-3 px-5 mb-2">Yoga Ekatanaya</p>
                     </div>
                     <transition
                       enter-active-class="transition-all duration-700 ease-in-out"
@@ -40,6 +39,13 @@
             </div>
     </div>
     <!-- /mobile -->
+
+    <div
+      v-if="showOverlay"
+      class="fixed h-[100dvh] w-full top-0 left-0 bg-lightgold z-[41] flex items-center justify-center text-[#252525] text-2xl font-primary"
+    >
+      Loading...
+    </div>
 
 
 
@@ -81,8 +87,8 @@
             </div>
        </div>
         
-       <div class="relative flex justify-center items-center h-screen overflow-hidden transition-all duration-500"  :class="isOpen ? 'w-full xl:w-2/6 xl:z-50' : 'w-full xl:w-0 xl:z-50'">
-          <div ref="scrollContainer" class="relative z-30 w-full h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth hide-scrollbar scroll-container" >
+       <div class="relative flex justify-center items-center h-[100dvh] overflow-hidden transition-all duration-500"  :class="isOpen ? 'w-full xl:w-2/6 xl:z-50' : 'w-full xl:w-0 xl:z-50'">
+          <div ref="scrollContainer" class="relative z-30 w-full h-[100dvh] overflow-y-scroll snap-y snap-mandatory scroll-smooth hide-scrollbar scroll-container" >
             <intro />
             <bride-man />
             <bride-woman />
@@ -144,7 +150,14 @@
 import { useRoute } from 'vue-router'
 import { getInvitedDetail } from '~/server/invited'
 import { ref, onMounted, onBeforeUnmount, nextTick } from 'vue';
-  import introloading from '~/components/introloading.vue';
+import introloading from '~/components/introloading.vue';
+
+  const showOverlay = ref(true)
+  onMounted(() => {
+    setTimeout(() => {
+      showOverlay.value = false
+    }, 2000) // 2 detik
+  })
 
 const route = useRoute()
 const slug = route.params.slug

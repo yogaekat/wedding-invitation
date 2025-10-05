@@ -1,13 +1,13 @@
 <template>
-    <section class="h-screen bg-[#252525] flex flex-col items-center justify-center snap-center bg-opacity-60 relative">
+    <section class="h-full bg-[#252525] flex flex-col items-center justify-center snap-center bg-opacity-60 relative">
         <img src="https://images.unsplash.com/photo-1655736394058-a98749c5aff9?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Man Bride" class="h-full w-full object-cover">
         <div class="absolute top-0 left-0 bottom-0 right-0 bg-[linear-gradient(180deg,#000_0%,rgba(0,0,0,0.5)_13.18%,rgba(37,37,37,0.8)_50.48%,rgba(0,0,0,0.5)_85.87%,#000_100%)] px-10 flex items-center">
             <div class="flex flex-col">
-                <div class="text-white mb-10">
-                    <p class="text-[2rem] font-title uppercase text-center mb-2 tracking-wider" data-aos="fade-up" data-aos-anchor-placement="top-bottom">Acara</p>
+                <div class="text-white mb-8">
+                    <p class="text-[1.5rem] sm:text-[2rem] font-title uppercase text-center mb-2 tracking-wider" data-aos="fade-up" data-aos-anchor-placement="top-bottom">Acara</p>
                     <p class="font-primary text-center text-[.9rem] font-thin" data-aos="fade-up" data-aos-anchor-placement="top-bottom">Merupakan suatu kebahagiaan dan kehormatan bagi kami, apabila Bapak/Ibu/Saudara/i, berkenan hadir untuk memberikan doa restu.</p>
                 </div>
-                <div class="flex justify-center mb-10" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <div class="flex justify-center mb-8" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                     <div class="inline-block">
                         <div class="font-primary bg-[#DAA63E] text-center py-3 px-8 rounded-tr-3xl">
                             <p class="uppercase text-[1.3rem] xl:text-[1.5rem] text-white">Jumat, 17 Oktober 2025</p>
@@ -26,7 +26,7 @@
                     </div>
                 </div>
                 <p class="font-primary text-center text-[.9rem] text-white mb-8 font-thin" data-aos="fade-up" data-aos-anchor-placement="top-bottom">Siang dan malam berganti begitu cepat, di antara saat-saat mendebarkan yang belum pernah kami rasakan sebelumnya. Kami nantikan kehadiran para keluarga dan sahabat, untuk menjadi saksi ikrar janji suci kami di hari yang bahagia.</p>
-                <div class="flex text-white justify-center gap-7 xl:gap-10 font-primary mb-10">
+                <div class="flex text-white justify-center gap-7 xl:gap-10 font-primary mb-8">
                     <div class="text-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                         <p class="text-[1.5rem]">{{ days }}</p>
                         <p class="text-[.9rem]">Hari</p>

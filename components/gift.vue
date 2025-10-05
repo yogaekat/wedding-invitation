@@ -1,5 +1,5 @@
 <template>
-    <section class="h-screen bg-[#252525] flex flex-col items-center justify-center snap-center bg-opacity-60 relative">
+    <section class="h-full bg-[#252525] flex flex-col items-center justify-center snap-center bg-opacity-60 relative">
         <video autoplay muted loop playsinline class="h-full w-full object-cover absolute top-0 left-0 z-[1]">
             <source src="/public/videos/semple2.mp4" type="video/mp4" />
             Browser Anda tidak mendukung elemen video.

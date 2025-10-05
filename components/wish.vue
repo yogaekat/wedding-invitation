@@ -1,24 +1,24 @@
 <template>
-    <section class="h-screen bg-[#252525] snap-center relative">
+    <section class="h-full bg-[#252525] snap-center relative">
         <img src="/public/images/bg-flower1.webp" alt="" class="absolute top-0 left-0 h-full w-full object-cover z-1">
         <div class="px-5 sm:px-8 bg-[#252525]/90 absolute top-0 left-0 h-full w-full z-2 flex flex-col justify-center">
-            <p class="text-[2rem] font-title uppercase text-center tracking-wider text-white mb-5" data-aos="fade-up">Ucapan</p>
+            <p class="text-[1.5rem] sm:text-[2rem] font-title uppercase text-center tracking-wider text-white mb-5" data-aos="fade-up">Ucapan</p>
 
             <form @submit.prevent="handleSubmit" class="flex flex-col gap-3 font-primary isolate rounded-xl bg-white/20 shadow-lg ring-1 ring-black/5 p-5 mb-5" data-aos="fade-up">
-                <input v-model="name" type="text" name="name" id="name" placeholder="Nama" class="py-2 px-5 rounded-md transition-all duration-300 focus:outline-none focus:ring-[#DAA63E] focus:ring-[2px]" required readonly>
-                <textarea v-model="wishes" name="wishes" id="wishes" placeholder="Ucapan" rows="4" class="py-2 px-5 rounded-md ransition-all duration-300 focus:outline-none focus:ring-[#DAA63E] focus:ring-[2px]" required></textarea>
+                <input v-model="name" type="text" name="name" id="name" placeholder="Nama" class="text-[.9rem] sm:text-base py-2 px-5 rounded-md transition-all duration-300 focus:outline-none focus:ring-[#DAA63E] focus:ring-[2px]" required readonly>
+                <textarea v-model="wishes" name="wishes" id="wishes" placeholder="Ucapan" rows="3" class="text-[.9rem] sm:text-base py-2 px-5 rounded-md ransition-all duration-300 focus:outline-none focus:ring-[#DAA63E] focus:ring-[2px]" required></textarea>
                 <div class="flex gap-5">
                     <div>
                         <input v-model="present" type="radio" id="hadir" name="present" value="Hadir" class="mr-2 accent-[#DAA63E]" required>
-                        <label for="hadir" class="text-white">Hadir</label><br>
+                        <label for="hadir" class="text-white text-[.9rem] sm:text-base">Hadir</label><br>
                     </div>
                     <div>
                         <input v-model="present" type="radio" id="tidakHadir" name="present" value="Maaf Berhalangan Hadir" class="mr-2 accent-[#DAA63E]" required>
-                        <label for="tidakHadir" class="text-white">Maaf Berhalangan Hadir</label><br>
+                        <label for="tidakHadir" class="text-white text-[.9rem] sm:text-base">Maaf Berhalangan Hadir</label><br>
                     </div>
                 </div>
                 <div class="text-end">
-                    <button class="bg-[#DAA63E] px-16 py-2 text-[#252525] rounded-md transition-all duration-300 hover:bg-[#c09237] tracking-wider uppercase">Kirim</button>
+                    <button class="bg-[#DAA63E] text-[.9rem] sm:text-base px-10 py-2 text-[#252525] rounded-md transition-all duration-300 hover:bg-[#c09237] tracking-wider uppercase">Kirim</button>
                 </div>
             </form>
 
