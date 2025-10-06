@@ -1,5 +1,5 @@
 <template>
-    <section class="h-full bg-green-500 flex flex-col items-center justify-center snap-start bg-opacity-60 relative">
+    <section class="h-full bg-green-500 flex flex-col items-center justify-center snap-start bg-opacity-60 relative transition-all duration-500">
       <img src="https://images.unsplash.com/photo-1581337516999-ed7dc0fec442?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Man Bride" class="h-full w-full object-cover absolute z-[1] top-0 left-0">
       <div class="absolute top-0 left-0 w-full h-[15vh] z-[3] bg-[linear-gradient(180deg,rgba(0,0,0,1)_0%,rgba(0,0,0,0.75)_58%,rgba(37,37,37,0)_100%)]">
         <div class="relative">

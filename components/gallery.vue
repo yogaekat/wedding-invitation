@@ -26,7 +26,7 @@
                 class="mb-2 break-inside-avoid"
             >
                 <a :href="img" data-fancybox="gallery"  >
-                    <img :src="img" alt="gallery Wedding Oka & Mita" class="w-full h-full rounded-xl object-cover" data-aos="fade-in"/>
+                    <img :src="img" alt="gallery Wedding Oka & Mita" class="w-full h-full rounded-xl object-cover" data-aos="flip-up"/>
                 </a>
             </div>
             </div>

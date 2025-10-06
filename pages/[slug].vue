@@ -15,7 +15,7 @@
                     <img src="/public/images/logo.svg" alt="" class="h-[30vh]">
                     <div class="text-center text-[#FAEFD9]">
                         <p class="mb-3">Kepada Yth.<br>Bapak/Ibu/Saudara/I</p>
-                        <p class="uppercase border-b border-[#FAEFD9] py-3 px-5 mb-2">Yoga Ekatanaya</p>
+                        <p class="uppercase border-b border-[#FAEFD9] py-3 px-5 mb-2">{{ invited.name }}</p>
                     </div>
                     <transition
                       enter-active-class="transition-all duration-700 ease-in-out"
@@ -88,7 +88,7 @@
        </div>
         
        <div class="relative flex justify-center items-center h-[100dvh] overflow-hidden transition-all duration-500"  :class="isOpen ? 'w-full xl:w-2/6 xl:z-50' : 'w-full xl:w-0 xl:z-50'">
-          <div ref="scrollContainer" class="relative z-30 w-full h-[100dvh] overflow-y-scroll snap-y snap-mandatory scroll-smooth hide-scrollbar scroll-container" >
+          <div ref="scrollContainer" class="relative z-30 w-full h-[100dvh] overflow-y-scroll snap-y snap-mandatory scroll-smooth hide-scrollbar scroll-container transition-all duration-500" >
             <intro />
             <bride-man />
             <bride-woman />
