@@ -18,7 +18,7 @@
             <p class="text-[1.5rem]">Kadek Winda Lestari</p>
           </div>
           <div>
-            <p class="font-primary text-base font-light mb-2 text-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">Putra dari pasangan <br>I Gede Ardiasa dan Ni Ketut Artini</p>
+            <p class="font-primary text-base font-light mb-2 text-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">Putra & putri dari pasangan <br>I Gede Ardiasa dan Ni Ketut Artini</p>
             <div class="flex items-center gap-1 justify-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-[15px] h-[15px] fill-white" viewBox="0 0 256 256"><path d="M224,120v96a8,8,0,0,1-8,8H160a8,8,0,0,1-8-8V164a4,4,0,0,0-4-4H108a4,4,0,0,0-4,4v52a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V120a16,16,0,0,1,4.69-11.31l80-80a16,16,0,0,1,22.62,0l80,80A16,16,0,0,1,224,120Z"></path></svg>
               <p class="font-primary text-[.8rem] font-light">Br. Sekar Kejula, Desa Yehembang Kauh</p>
