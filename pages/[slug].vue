@@ -10,10 +10,10 @@
             <source src="/public/videos/semple1.mp4" type="video/mp4" />
             Browser Anda tidak mendukung elemen video.
         </video> -->
-        <img src="/public/images/cover.webp" alt="" class="h-full w-full object-cover absolute top-0 left-0 z-[1]">
+        <img src="/public/images/cover.webp" alt="" class="h-full w-full object-cover object-bottom absolute top-0 left-0 z-[1]">
         <div class="absolute top-0 left-0 h-full w-full bg-[#252525]/80 flex justify-center items-end pb-[3rem] z-[2]">
             <div class="flex flex-col items-center transition-all duration-700 font-primary">
-                <img src="/public/images/logo.svg" alt="" class="h-[18vh] mb-2">
+                <img src="/public/images/logo.svg" alt="" class="h-[12dvh] mb-2">
                 <div class="text-center text-[.9rem] text-[#FAEFD9]">
                     <p class="mb-3">Kepada Yth.<br>Bapak/Ibu/Saudara/I</p>
                     <p class="uppercase border-b border-[#FAEFD9] py-3 px-5 mb-2">{{ invited.name }}</p>
