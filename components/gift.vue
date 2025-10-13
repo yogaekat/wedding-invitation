@@ -1,14 +1,15 @@
 <template>
     <section class="h-full bg-[#252525] flex flex-col items-center justify-center snap-center bg-opacity-60 relative transition-all duration-500">
-        <video autoplay muted loop playsinline class="h-full w-full object-cover absolute top-0 left-0 z-[1]">
+        <!-- <video autoplay muted loop playsinline class="h-full w-full object-cover absolute top-0 left-0 z-[1]">
             <source src="/public/videos/semple2.mp4" type="video/mp4" />
             Browser Anda tidak mendukung elemen video.
-        </video>
+        </video> -->
+        <img src="/public/images/gift.webp" class="h-full w-full object-cover absolute top-0 left-0 z-[1]" alt="">
         <div class="absolute top-0 left-0 h-full w-full z-[2] bg-[#000000]/40 flex items-center">
             <div class="text-white w-full flex flex-col items-center">
                 <p class="text-[2rem] font-title uppercase text-center mb-5 tracking-wider" data-aos="fade-up">Kado Digital</p>
                 <div @click="copyAccount" class="inline-flex items-center p-3 rounded-lg border bg-gray-50 bg-opacity-10 font-bold cursor-pointer group hover:shadow" data-aos="fade-up">
-                    <img src="https://www.bca.co.id/-/media/Feature/Card/List-Card/Tentang-BCA/Brand-Assets/Logo-BCA/Logo-BCA_Biru.png" class="h-[5vh] border-r mr-4 pr-4 filter invert brightness-0" alt="">
+                    <img src="/public/images/mandiri-logo.png" class="h-[5vh] border-r mr-4 pr-4 filter invert brightness-0" alt="">
                     <div class="font-primary">
                         <p>{{ number }}</p>
                         <p>{{ name }}</p>
@@ -37,8 +38,8 @@
 <script setup>
     import { ref } from 'vue'
 
-    const number = ref('9876501234')
-    const name = ref('Putu Oka Difananda')
+    const number = ref('1750001857879')
+    const name = ref('Gusti Ayu Kade Mita')
 
     const copied = ref(false)
     let clearTimer = null

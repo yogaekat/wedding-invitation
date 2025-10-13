@@ -1,6 +1,6 @@
 <template>
     <section class="h-full bg-[#252525] flex flex-col items-center justify-center snap-center bg-opacity-60 relative transition-all duration-500">
-        <img src="https://images.unsplash.com/photo-1655736394058-a98749c5aff9?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Man Bride" class="h-full w-full object-cover">
+        <img src="/public/images/event.webp" alt="Man Bride" class="h-full w-full object-cover">
         <div class="absolute top-0 left-0 bottom-0 right-0 bg-[linear-gradient(180deg,#000_0%,rgba(0,0,0,0.5)_13.18%,rgba(37,37,37,0.8)_50.48%,rgba(0,0,0,0.5)_85.87%,#000_100%)] px-10 flex items-center">
             <div class="flex flex-col">
                 <div class="text-white mb-8">
@@ -48,7 +48,7 @@
                     </div>
                 </div>
                 <div class="text-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                    <a href="" class="font-primary text-white text-[.9rem] border border-white px-5 py-3 inline-flex items-center gap-1 transition-all duration-300 hover:bg-white hover:text-[#252525] fill-white hover:fill-[#252525] rounded-md">
+                    <a href="https://maps.google.com/?q=-8.370286,114.748756" target="_blank" class="font-primary text-white text-[.9rem] border border-white px-5 py-3 inline-flex items-center gap-1 transition-all duration-300 hover:bg-white hover:text-[#252525] fill-white hover:fill-[#252525] rounded-md">
                         Buka Map
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px]" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg>
                     </a>

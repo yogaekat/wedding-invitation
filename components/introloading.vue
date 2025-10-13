@@ -4,15 +4,15 @@
     <div class="relative w-[80vw] sm:w-[40vw] aspect-square">
       <!-- ✱ tiap img-container saya tambahkan opacity-0 supaya awalnya tak terlihat -->
       <div id="img-1" class="opacity-0 aspect-[.8] w-[40vw] sm:w-[18vw] overflow-hidden absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[5]">
-        <img src="/public/images/semple/1.webp" class="w-full h-full object-cover object-center" />
+        <img src="/public/images/main-load.webp" class="w-full h-full object-cover object-center" />
       </div>
 
       <div id="img-2" class="opacity-0 aspect-[.8] w-[30vw] sm:w-[15vw] overflow-hidden absolute top-0 left-0">
-        <img src="/public/images/semple/4.webp" class="w-full h-full object-cover object-center" />
+        <img src="/public/images/bride-man.webp" class="w-full h-full object-cover object-center" />
       </div>
 
       <div id="img-3" class="opacity-0 aspect-[.8] w-[30vw] sm:w-[15vw] overflow-hidden absolute -bottom-[10px] -right-[0] z-[1]">
-        <img src="/public/images/semple/5.webp" class="w-full h-full object-cover object-center" />
+        <img src="/public/images/bride-woman.webp" class="w-full h-full object-cover object-center" />
       </div>
     </div>
   </div>

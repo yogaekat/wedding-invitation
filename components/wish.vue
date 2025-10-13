@@ -1,6 +1,6 @@
 <template>
     <section class="h-full bg-[#252525] snap-center relative transition-all duration-500">
-        <img src="/public/images/bg-flower1.webp" alt="" class="absolute top-0 left-0 h-full w-full object-cover z-1">
+        <img src="/public/images/event.webp" alt="" class="absolute top-0 left-0 h-full w-full object-cover z-1">
         <div class="px-5 sm:px-8 bg-[#252525]/90 absolute top-0 left-0 h-full w-full z-2 flex flex-col justify-center">
             <p class="text-[1.5rem] sm:text-[2rem] font-title uppercase text-center tracking-wider text-white mb-5" data-aos="fade-up">Ucapan</p>
 
