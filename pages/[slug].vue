@@ -5,7 +5,7 @@
       </div>
     </ClientOnly>
     <!-- mobile -->
-    <div class="fixed left-0 w-full h-[100dvh] bg-pink-700 z-40 flex justify-center items-center xl:hidden transition-all duration-1000" :class="isOpen ? '-top-[100%]' : 'top-0'">
+    <div class="fixed left-0 w-full h-[100dvh] bg-[#252525] z-40 flex justify-center items-center xl:hidden transition-all duration-1000" :class="isOpen ? '-top-[100%]' : 'top-0'">
         <!-- <video autoplay muted loop playsinline class="h-full w-full object-cover absolute top-0 left-0 z-[1]">
             <source src="/public/videos/semple1.mp4" type="video/mp4" />
             Browser Anda tidak mendukung elemen video.
@@ -51,7 +51,7 @@
 
 
     <div class="flex relative ">
-       <div class="bg-pink-700 xl:flex xl:flex-col items-center justify-center z-40 relative hidden transition-all duration-500" :class="isOpen ? 'xl:w-4/6' : 'xl:w-full'">
+       <div class="bg-[#252525] xl:flex xl:flex-col items-center justify-center z-40 relative hidden transition-all duration-500" :class="isOpen ? 'xl:w-4/6' : 'xl:w-full'">
            <!-- <button v-if="!isOpen" class="bg-black text-white p-4 mb-10" @click="openPanel">
                OPEN UNDANGAN
            </button> -->
