@@ -38,7 +38,7 @@
 <script setup>
     import { ref } from 'vue'
 
-    const number = ref('1750001857879')
+    const number = ref('1750001847879')
     const name = ref('Gusti Ayu Kade Mita')
 
     const copied = ref(false)
